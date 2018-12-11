@@ -145,6 +145,9 @@ spec:
       imagePullSecrets:
       - name: regcred
   `
+  
 Use NFS:
+
 https://help.ubuntu.com/lts/serverguide/network-file-system.html.en
+
 /root/nfs xx.xx.xx.xx(rw,sync,fsid=0,no_root_squash,crossmnt,no_subtree_check,no_acl) 10.148.213.251(rw,sync,fsid=0,no_root_squash,crossmnt,no_subtree_check,no_acl) 10.148.213.38(rw,sync,fsid=0,no_root_squash,crossmnt,no_subtree_check,no_acl)
