@@ -89,3 +89,62 @@ kubectl scale rc kubia --replicas=3
 kubectl config get-contexts
 kubectl config use-context kubernetes-admin@kubernetes
 `
+
+* Rolling out with Deployment:
+
+`
+kubectl rollout status deployment markotraining
+kubectl rollout undo deployment markotraining
+kubectl rollout history deployment markotraining
+`
+
+* Create ssl
+
+`
+openssl genrsa -out https.key 2048
+openssl req -new -x509 -key https.key -out https.cert -days 3650 -subj CN=xxx.com
+kubectl create secret generic markotraining-secret --from-file=https.key --from-file=https.cert
+`
+
+* Talking to the API server from within a pod:
+Disabling role-based access control (RBAC)
+
+`
+kubectl create clusterrolebinding permissive-binding --clusterrole=cluster-admin --group=system:serviceaccounts
+export CURL_CA_BUNDLE=/var/run/secrets/kubernetes.io/serviceaccount/ca.crt
+TOKEN=$(cat /var/run/secrets/kubernetes.io/serviceaccount/token)
+curl -H "Authorization: Bearer $TOKEN" https://kubernetes
+`
+
+* Deploy with private image:
+
+kubectl delete secret regcred
+kubectl create secret docker-registry regcred --docker-username=chalang --docker-password=XXXXX --docker-email=xxx@xxx.com
+
+kubectl get secret regcred --output=yaml
+kubectl get secret regcred --output="jsonpath={.data.\.dockerconfigjson}" | base64 --decode
+
+`
+apiVersion: apps/v1beta2
+kind: ReplicaSet
+metadata:
+  name: markotraining
+spec:
+  replicas: 3
+  selector:
+    matchLabels:
+      app: markotraining
+  template:
+    metadata:
+      labels:
+        app: markotraining
+    spec:
+      containers:
+      - name: markotraining
+        image: chalang/markotraining:1
+      imagePullSecrets:
+      - name: regcred
+  `
+Use NFS:
+https://help.ubuntu.com/lts/serverguide/network-file-system.html.en
+/root/nfs xx.xx.xx.xx(rw,sync,fsid=0,no_root_squash,crossmnt,no_subtree_check,no_acl) 10.148.213.251(rw,sync,fsid=0,no_root_squash,crossmnt,no_subtree_check,no_acl) 10.148.213.38(rw,sync,fsid=0,no_root_squash,crossmnt,no_subtree_check,no_acl)
