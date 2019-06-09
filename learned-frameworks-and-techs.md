@@ -43,6 +43,8 @@ As an memo
 20. Nodejs in action
 21. Hadoop: The Definitive Guide
 22. The Definitive Guide to HTML5
+23. Kubenetes in action
+24. Docker cookbook
 
 ## FE
 [Reference](https://github.com/Charlang/become-an-architect/blob/master/FE_Tech_Stack_Checklist.md)
