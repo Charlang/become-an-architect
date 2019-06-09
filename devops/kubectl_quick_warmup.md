@@ -1,4 +1,4 @@
-# Kubernetes CLI quick commands:
+# Kubernetes CLI quick commands(DRAFT):
 
 * Install minikube
 
