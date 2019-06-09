@@ -19,7 +19,7 @@ As an memo
 14. Inside the C++ Object Model
 16. Introduce to Algorithms
 
-## J2EE
+## J2EE & JAVA Core
 
 1. Head first Java
 2. Head first Servlet & JSP
@@ -45,4 +45,4 @@ As an memo
 22. The Definitive Guide to HTML5
 
 ## FE
-
+[Reference](https://github.com/Charlang/become-an-architect/blob/master/FE_Tech_Stack_Checklist.md)
