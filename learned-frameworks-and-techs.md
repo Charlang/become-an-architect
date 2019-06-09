@@ -3,6 +3,10 @@ As an memo
 
 ## C Program language and telecommunications system design
 
+### Coding language: C / C++ / Makefile / Python / windows batch scripting / TTCN
+
+### Learned books
+
 1. C primer plus
 2. C Traps and Pitfalls
 3. Pointers on C
@@ -20,6 +24,10 @@ As an memo
 16. Introduce to Algorithms
 
 ## J2EE & JAVA Core
+
+### Coding language: JAVA / JSP / JS (JQuery, DOJO) / SQL script
+
+### Learned books
 
 1. Head first Java
 2. Head first Servlet & JSP
