@@ -47,4 +47,4 @@ As an memo
 24. Docker cookbook
 
 ## FE
-[Reference](https://github.com/Charlang/become-an-architect/blob/master/FE_Tech_Stack_Checklist.md)
+Since quite a lot content, so tracking in separate doc: [Reference](https://github.com/Charlang/become-an-architect/blob/master/FE_Tech_Stack_Checklist.md)
