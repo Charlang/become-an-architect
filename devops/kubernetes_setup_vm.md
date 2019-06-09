@@ -1,3 +1,5 @@
+# Records of cmd(DRAFT):
+
     1  apt-get update && apt-get install -y apt-transport-https curl
 
     2  curl -s https://packages.cloud.google.com/apt/doc/apt-key.gpg | apt-key add -
