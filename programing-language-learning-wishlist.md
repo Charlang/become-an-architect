@@ -5,3 +5,5 @@
 # Scala
 # Ruby
 # C#
+# Python
+# LISP
