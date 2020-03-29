@@ -53,6 +53,7 @@ As an memo
 22. The Definitive Guide to HTML5
 23. Kubenetes in action
 24. Docker cookbook
+25. Clean Code
 
 ## FE
 Since quite a lot content, so tracking in separate doc: [Reference](https://github.com/Charlang/become-an-architect/blob/master/FE_Tech_Stack_Checklist.md)
