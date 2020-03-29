@@ -22,6 +22,8 @@ https://redux.js.org/
 
 https://single-spa.js.org/
 
+https://github.com/ReactiveX/RxJS
+
 https://graphql.org/ (nice to have)
 
 https://vuejs.org/ (nice to have)
