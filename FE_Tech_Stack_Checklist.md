@@ -20,6 +20,8 @@ https://nextjs.org/
 
 https://redux.js.org/
 
+https://single-spa.js.org/
+
 https://graphql.org/ (nice to have)
 
 https://vuejs.org/ (nice to have)
@@ -43,6 +45,8 @@ https://en.wikipedia.org/wiki/CommonJS (nice to have)
 https://requirejs.org/docs/whyamd.html (nice to have)
 
 ## 4. UI Design (the more the better)
+
+https://storybook.js.org/
 
 https://emotion.sh/docs/introduction
 
